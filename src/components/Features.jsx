@@ -1,26 +1,26 @@
 import React from 'react';
-import { CheckCircle2, Workflow, KeyRound, Users, ShieldCheck } from 'lucide-react';
+import { CheckCircle2, Workflow, ShieldCheck, Bot, BookOpen } from 'lucide-react';
 
 const features = [
   {
+    icon: <Bot className="h-5 w-5" />,
+    title: 'AI onboarding assistant',
+    desc: 'Answers questions about your org, policies, tools, and culture—instantly, 24/7.',
+  },
+  {
+    icon: <BookOpen className="h-5 w-5" />,
+    title: 'Interactive tutorials',
+    desc: 'Step‑by‑step guides with checklists, progress tracking, and rich media walkthroughs.',
+  },
+  {
     icon: <Workflow className="h-5 w-5" />,
-    title: 'Automated workflows',
-    desc: 'Trigger conditional steps for HR, IT, and finance — no manual chasing.',
-  },
-  {
-    icon: <KeyRound className="h-5 w-5" />,
-    title: 'Access provisioning',
-    desc: 'Grant roles across apps with least-privilege defaults and audit trails.',
-  },
-  {
-    icon: <Users className="h-5 w-5" />,
-    title: 'Directory sync',
-    desc: 'Sync with Okta, Azure AD, or Google Workspace to keep records accurate.',
+    title: 'Role‑based workflows',
+    desc: 'Personalized flows for employees, contractors, and customers across departments.',
   },
   {
     icon: <ShieldCheck className="h-5 w-5" />,
     title: 'Compliance ready',
-    desc: 'SOC 2 and ISO workflows out of the box with exportable evidence.',
+    desc: 'SOC 2 and ISO‑aligned controls with exportable audit evidence and access logs.',
   },
 ];
 
@@ -33,10 +33,10 @@ export default function Features() {
             <CheckCircle2 className="h-4 w-4" /> Why teams choose BlueOnboard
           </span>
           <h2 className="mt-4 text-3xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
-            Everything you need for enterprise onboarding
+            Tutorials and AI guidance built for enterprises
           </h2>
           <p className="mt-3 text-slate-600 dark:text-slate-300">
-            Consolidate invites, documents, and access into a single, secure flow.
+            Deliver clear, consistent onboarding with an AI guide, interactive lessons, and secure access.
           </p>
         </div>
 

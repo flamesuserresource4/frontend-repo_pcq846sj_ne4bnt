@@ -2,7 +2,9 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
+import Tutorials from './components/Tutorials';
 import CTA from './components/CTA';
+import Assistant from './components/Assistant';
 
 function App() {
   return (
@@ -11,11 +13,13 @@ function App() {
       <main>
         <Hero />
         <Features />
+        <Tutorials />
         <CTA />
       </main>
+      <Assistant />
       <footer className="py-10 text-center text-sm text-slate-500 dark:text-slate-400">
         <p>
-          © {new Date().getFullYear()} BlueOnboard — Clean, compliant onboarding for organizations and enterprises.
+          © {new Date().getFullYear()} BlueOnboard — Guided tutorials and AI assistance for organizational onboarding.
         </p>
       </footer>
     </div>
